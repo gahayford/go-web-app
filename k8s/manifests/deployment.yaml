@@ -17,5 +17,6 @@ spec:
       containers:
       - name: go-web-app
         image: gahayford/go-web-app:{{ .Values.image.tag }}
+        pullPolicy: Always
         ports:
         - containerPort: 8080
